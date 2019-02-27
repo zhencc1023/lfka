@@ -1,7 +1,5 @@
 package baseUntil;
 
-import java.util.BitSet;
-
 /**
  * @author cc
  * @description 位图结构简单创建
@@ -82,7 +80,6 @@ public class BitMap {
     /**
      * 判断指定数字num是否存
      * 将1左移position后，那个位置自然就是1，然后和以前的数据做&，判断是否为0即可
-     * @param bits
      * @param num
      * @return
      */
@@ -93,7 +90,6 @@ public class BitMap {
     /**
      * 重置某一数字对应在bitmap中的值
      * 对1进行左移，然后取反，最后与byte[index]作与操作。
-     * @param bits
      * @param num
      */
     public void clear( int num){
